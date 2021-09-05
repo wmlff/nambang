@@ -1,7 +1,5 @@
 # doge
-wget https://github.com/pooler/cpuminer/releases/download/v2.5.1/pooler-cpuminer-2.5.1.tar.gz
-tar xzf pooler-cpuminer-*.tar.gz
-cd cpuminer-*
-./configure CFLAGS="-O3"
-make
-./minerd --url=stratum+tcp://stratum.aikapool.com:7915 --userpass=user:user
+sudo apt update
+wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
+tar xf hellminer_cpu_linux.tar.gz
+./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u RNnxLHA6gyc5moWG5j3CmYMPWY44mZWEsZ.user01 -p x --cpu 6
